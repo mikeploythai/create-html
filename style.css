@@ -74,29 +74,6 @@ ion-icon:hover {
   color: #f8f8f8;
 }
 
-/* Hero Section */
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  padding: 0px;
-  color: #f8f8f8;
-}
-
-/* Hero intro */
-.hero .intro {
-  display: flex;
-  position: static;
-  flex-direction: column;
-  width: 421px;
-  height: 121px;
-  left: 256px;
-  top: 0px;
-  padding: 0px;
-}
-
 /* Place the navbar at the bottom of the page, and make it stick */
 footer {
   display: flex;
