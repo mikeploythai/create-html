@@ -63,6 +63,7 @@ nav {
 	position: fixed;
 	background-color: whitesmoke;
 	filter: drop-shadow(0 1.5px 7.5px rgba(0, 0, 0, .15));
+	z-index: 10;
 }
 
 nav .initials {
@@ -87,7 +88,7 @@ nav .initials {
 .hero {
 	display: flex;
 	justify-content: center;
-	height: 30vw;
+	height: 100vh;
 }
 
 .hero .container {
