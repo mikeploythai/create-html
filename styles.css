@@ -134,6 +134,12 @@ nav .initials {
 	border: 4px solid crimson;
 }
 
+/* About */
+.about .container {
+	flex-direction: column;
+	align-items: unset;
+}
+
 /* Projects */
 .projects .container {
 	flex-direction: column;
