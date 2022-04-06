@@ -1,6 +1,6 @@
+/* Global */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
-/* Global */
 * {
 	margin: 0;
 	padding: 0;
@@ -12,4 +12,182 @@
 
 html {
 	scroll-behavior: smooth;
+}
+
+body {
+	background-color: whitesmoke;
+}
+
+/* Shared Styles */
+nav, footer {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 0;
+}
+
+nav .container, footer .container {
+	justify-content: space-between;
+	width: 1200px;
+}
+
+nav .initials:hover, .nav-btn a:hover, ion-icon:hover {
+	color: crimson;
+}
+
+.about, .projects, .contact {
+	display: flex;
+	justify-content: center;
+	padding: 96px 0;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	width: 1000px;
+	margin: 0 16px;
+}
+
+.header {
+	font-size: 36px;
+	padding-bottom: 8px;
+}
+
+.body-txt {
+	font-size: 18px;
+}
+
+/* Nav */
+nav {
+	position: fixed;
+	background-color: whitesmoke;
+	filter: drop-shadow(0 1.5px 7.5px rgba(0, 0, 0, .15));
+}
+
+nav .initials {
+	font-size: 36px;
+	font-weight: bold;
+	padding-bottom: 8px;
+	transition: color .25s ease-in-out;
+}
+
+.nav-btn {
+	display: flex;
+	gap: 64px;
+}
+
+.nav-btn a {
+	font-size: 18px;
+	font-weight: 500;
+	transition: color .25s ease-in-out;
+}
+
+/* Hero */
+.hero {
+	display: flex;
+	justify-content: center;
+	height: 30vw;
+}
+
+.hero .container {
+	justify-content: space-between;
+}
+
+.hero .left, .contact .container {
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+}
+
+.hero .name {
+	font-size: 64px;
+}
+
+.hero .tagline {
+	font-size: 24px;
+	font-weight: 500;
+	width: 500px;
+}
+
+.resume-btn, .contact-btn {
+	font-size: 18px;
+	font-weight: 500;
+	padding: 16px 32px;
+	width: fit-content;
+	background-color: crimson;
+	color: whitesmoke;
+	border-radius: 10px;
+	transition: transform .25s ease-in-out;
+}
+
+.resume-btn:hover, .contact-btn:hover {
+	transform: scale(1.1);
+}
+
+.hero img {
+	height: 320px;
+	width: 320px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: 0 30%;
+	border: 4px solid crimson;
+}
+
+/* Projects */
+.projects .container {
+	flex-direction: column;
+	gap: 56px;
+}
+
+.project-grid {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.project-grid a img {
+	width: 300px;
+	height: auto;
+	background-color: crimson;
+	border-radius: 10px;
+	filter: drop-shadow(0 1.5px 7.5px rgba(0, 0, 0, .15));
+	transition: transform .25s ease-in-out;
+}
+
+.project-grid a img:hover {
+	transform: scale(1.1);
+}
+
+/* Contact */
+.contact .container {
+	align-items: unset;
+}
+
+/* Footer */
+footer {
+	background-color: black;
+}
+
+footer h1 {
+	font-size: 18px;
+	color: whitesmoke;
+}
+
+.footer-btn {
+	display: flex;
+	gap: 32px;
+}
+
+.footer-btn a {
+	display: flex;
+}
+
+ion-icon {
+	color: whitesmoke;
+	font-size: 24px;
+	transition: color .25s ease-in-out;
 }
