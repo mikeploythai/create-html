@@ -2,199 +2,199 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 * {
-	margin: 0;
-	padding: 0;
-	font-family: 'DM Sans';
-	color: black;
-	text-decoration: none;
-	list-style: none;
+	margin:
+	padding:
+	font-family:
+	color:
+	text-decoration:
+	list-style:
 }
 
 html {
-	scroll-behavior: smooth;
+	scroll-behavior:
 }
 
 body {
-	background-color: whitesmoke;
+	background-color:
 }
 
 /* Shared Styles */
 nav, footer {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	padding: 16px 0;
+	display:
+	width:
+	justify-content:
+	align-items:
+	padding:
 }
 
 nav .container, footer .container {
-	justify-content: space-between;
-	width: 1200px;
+	justify-content:
+	width:
 }
 
 nav .initials:hover, .nav-btn a:hover, ion-icon:hover {
-	color: crimson;
+	color:
 }
 
 .about, .projects, .contact {
-	display: flex;
-	justify-content: center;
-	padding: 96px 0;
+	display:
+	justify-content:
+	padding:
 }
 
 .container {
-	display: flex;
-	align-items: center;
-	width: 1000px;
-	margin: 0 16px;
+	display:
+	align-items:
+	width:
+	margin:
 }
 
 .header {
-	font-size: 36px;
-	padding-bottom: 8px;
+	font-size:
+	padding-bottom:
 }
 
 .body-txt {
-	font-size: 18px;
+	font-size:
 }
 
 /* Nav */
 nav {
-	position: fixed;
-	background-color: whitesmoke;
-	filter: drop-shadow(0 1.5px 7.5px rgba(0, 0, 0, .15));
-	z-index: 10;
+	position:
+	background-color:
+	filter:
+	z-index:
 }
 
 nav .initials {
-	font-size: 36px;
-	font-weight: bold;
-	padding-bottom: 8px;
-	transition: color .25s ease-in-out;
+	font-size:
+	font-weight:
+	padding-bottom:
+	transition:
 }
 
 .nav-btn {
-	display: flex;
-	gap: 64px;
+	display:
+	gap:
 }
 
 .nav-btn a {
-	font-size: 18px;
-	font-weight: 500;
-	transition: color .25s ease-in-out;
+	font-size:
+	font-weight:
+	transition:
 }
 
 /* Hero */
 .hero {
-	display: flex;
-	justify-content: center;
-	height: 100vh;
+	display:
+	justify-content:
+	height:
 }
 
 .hero .container {
-	justify-content: space-between;
+	justify-content:
 }
 
 .hero .left, .contact .container {
-	display: flex;
-	flex-direction: column;
-	gap: 64px;
+	display:
+	flex-direction:
+	gap:
 }
 
 .hero .name {
-	font-size: 64px;
+	font-size:
 }
 
 .hero .tagline {
-	font-size: 24px;
-	font-weight: 500;
-	width: 500px;
+	font-size:
+	font-weight:
+	width:
 }
 
 .resume-btn, .contact-btn {
-	font-size: 18px;
-	font-weight: 500;
-	padding: 16px 32px;
-	width: fit-content;
-	background-color: crimson;
-	color: whitesmoke;
-	border-radius: 10px;
-	transition: transform .25s ease-in-out;
+	font-size:
+	font-weight:
+	padding:
+	width:
+	background-color:
+	color:
+	border-radius:
+	transition:
 }
 
 .resume-btn:hover, .contact-btn:hover {
-	transform: scale(1.1);
+	transform:
 }
 
 .hero img {
-	height: 320px;
-	width: 320px;
-	border-radius: 50%;
-	object-fit: cover;
-	object-position: 0 30%;
-	border: 4px solid crimson;
+	height:
+	width:
+	border-radius:
+	object-fit:
+	object-position:
+	border:
 }
 
 /* About */
 .about .container {
-	flex-direction: column;
-	align-items: unset;
+	flex-direction:
+	align-items:
 }
 
 /* Projects */
 .projects .container {
-	flex-direction: column;
-	gap: 56px;
+	flex-direction:
+	gap:
 }
 
 .project-grid {
-	display: grid;
-	width: 100%;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	justify-content: center;
-  align-items: center;
-  gap: 32px;
+	display:
+	width:
+	grid-template-columns:
+	justify-content:
+  	align-items:
+  	gap:
 }
 
 .project-grid a img {
-	width: 300px;
-	height: auto;
-	background-color: crimson;
-	border-radius: 10px;
-	filter: drop-shadow(0 1.5px 7.5px rgba(0, 0, 0, .15));
-	transition: transform .25s ease-in-out;
+	width:
+	height:
+	background-color:
+	border-radius:
+	filter:
+	transition:
 }
 
 .project-grid a img:hover {
-	transform: scale(1.1);
+	transform:
 }
 
 /* Contact */
 .contact .container {
-	align-items: unset;
+	align-items:
 }
 
 /* Footer */
 footer {
-	background-color: black;
+	background-color:
 }
 
 footer h1 {
-	font-size: 18px;
-	color: whitesmoke;
+	font-size:
+	color:
 }
 
 .footer-btn {
-	display: flex;
-	gap: 32px;
+	display:
+	gap:
 }
 
 .footer-btn a {
-	display: flex;
+	display:
 }
 
 ion-icon {
-	color: whitesmoke;
-	font-size: 24px;
-	transition: color .25s ease-in-out;
+	color:
+	font-size:
+	transition:
 }
