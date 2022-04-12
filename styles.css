@@ -1,200 +1,203 @@
 /* Global */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 * {
-	margin:
-	padding:
-	font-family:
-	color:
-	text-decoration:
-	list-style:
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans";
+  color: black;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
-	scroll-behavior:
+  scroll-behavior: smooth;
 }
 
 body {
-	background-color:
+  /* TODO: Change the background color to whitesmoke */
 }
 
 /* Shared Styles */
-nav, footer {
-	display:
-	width:
-	justify-content:
-	align-items:
-	padding:
+nav,
+footer {
+  /* TODO: Make it so that components in these are centered along both X and Y */
+  width: 100%;
+  padding: 16px 0;
 }
 
-nav .container, footer .container {
-	justify-content:
-	width:
+nav .container,
+footer .container {
+  justify-content: space-between;
+  width: 1200px;
 }
 
-nav .initials:hover, .nav-btn a:hover, ion-icon:hover {
-	color:
+nav .initials:hover,
+.nav-btn a:hover,
+ion-icon:hover {
+  /* TODO: Make the text and icon colors crimson */
 }
 
-.about, .projects, .contact {
-	display:
-	justify-content:
-	padding:
+.about,
+.projects,
+.contact {
+  /* TODO: Center these components along the Y axis */
+  padding: 96px 0;
 }
 
 .container {
-	display:
-	align-items:
-	width:
-	margin:
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  margin: 0 16px;
 }
 
 .header {
-	font-size:
-	padding-bottom:
+  /* TODO: Make the text size 36px */
+  padding-bottom: 8px;
 }
 
 .body-txt {
-	font-size:
+  font-size: 18px;
 }
 
 /* Nav */
 nav {
-	position:
-	background-color:
-	filter:
-	z-index:
+  position: fixed;
+  background-color: whitesmoke;
+  filter: drop-shadow(0 1.5px 7.5px rgba(0, 0, 0, 0.15));
+  z-index: 10;
 }
 
 nav .initials {
-	font-size:
-	font-weight:
-	padding-bottom:
-	transition:
+  /* TODO: Make the text size 36px the text weight bold */
+  padding-bottom: 8px;
+  transition: color 0.25s ease-in-out;
 }
 
 .nav-btn {
-	display:
-	gap:
+  display: flex;
+  gap: 64px;
 }
 
 .nav-btn a {
-	font-size:
-	font-weight:
-	transition:
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.25s ease-in-out;
 }
 
 /* Hero */
 .hero {
-	display:
-	justify-content:
-	height:
+  display: flex;
+  justify-content: center;
+  height: 100vh;
 }
 
 .hero .container {
-	justify-content:
+  /* TODO: Make it such that elements in the container are spaced apart */
 }
 
-.hero .left, .contact .container {
-	display:
-	flex-direction:
-	gap:
+.hero .left,
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  /* TODO: Add a gap of 64px */
 }
 
 .hero .name {
-	font-size:
+  font-size: 64px;
 }
 
 .hero .tagline {
-	font-size:
-	font-weight:
-	width:
+  /* TODO: Make the text size 24px and text weight 500 */
+  width: 500px;
 }
 
-.resume-btn, .contact-btn {
-	font-size:
-	font-weight:
-	padding:
-	width:
-	background-color:
-	color:
-	border-radius:
-	transition:
+.resume-btn,
+.contact-btn {
+  font-size: 18px;
+  font-weight: 500;
+  /* TODO: Give the buttons a vertical padding of 16 and a horizontal padding of 32 */
+  width: fit-content;
+  background-color: crimson;
+  color: whitesmoke;
+  /* TODO: Make the corner radius of the buttons 10px */
+  transition: transform 0.25s ease-in-out;
 }
 
-.resume-btn:hover, .contact-btn:hover {
-	transform:
+.resume-btn:hover,
+.contact-btn:hover {
+  transform: scale(1.1);
 }
 
 .hero img {
-	height:
-	width:
-	border-radius:
-	object-fit:
-	object-position:
-	border:
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0 30%;
+  border: 4px solid crimson;
 }
 
 /* About */
 .about .container {
-	flex-direction:
-	align-items:
+  /* TODO: Make the direction of the elements flow vertically */
+  align-items: unset;
 }
 
 /* Projects */
 .projects .container {
-	flex-direction:
-	gap:
+  flex-direction: column;
+  gap: 56px;
 }
 
 .project-grid {
-	display:
-	width:
-	grid-template-columns:
-	justify-content:
-  	align-items:
-  	gap:
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* TODO: Center this along both X and Y */
+  gap: 32px;
 }
 
 .project-grid a img {
-	width:
-	height:
-	background-color:
-	border-radius:
-	filter:
-	transition:
+  width: 300px;
+  height: auto;
+  background-color: crimson;
+  border-radius: 10px;
+  filter: drop-shadow(0 1.5px 7.5px rgba(0, 0, 0, 0.15));
+  transition: transform 0.25s ease-in-out;
 }
 
 .project-grid a img:hover {
-	transform:
+  /* Make this scale up to 1.1x */
 }
 
 /* Contact */
 .contact .container {
-	align-items:
+  align-items: unset;
 }
 
 /* Footer */
 footer {
-	background-color:
+  /* TODO: Make the background color black */
 }
 
 footer h1 {
-	font-size:
-	color:
+  font-size: 18px;
+  color: whitesmoke;
 }
 
 .footer-btn {
-	display:
-	gap:
+  display: flex;
+  gap: 32px;
 }
 
 .footer-btn a {
-	display:
+  display: flex;
 }
 
 ion-icon {
-	color:
-	font-size:
-	transition:
+  color: whitesmoke;
+  font-size: 24px;
+  transition: color 0.25s ease-in-out;
 }
