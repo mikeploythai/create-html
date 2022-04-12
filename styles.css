@@ -1,200 +1,203 @@
 /* Global */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 * {
-	margin: 0;
-	padding: 0;
-	font-family: 'DM Sans';
-	color: black;
-	text-decoration: none;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans";
+  color: black;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	background-color: whitesmoke;
+  /* TODO: Change the background color to whitesmoke */
 }
 
 /* Shared Styles */
-nav, footer {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	padding: 16px 0;
+nav,
+footer {
+  /* TODO: Make it so that components in these are centered along both X and Y */
+  width: 100%;
+  padding: 16px 0;
 }
 
-nav .container, footer .container {
-	justify-content: space-between;
-	width: 1200px;
+nav .container,
+footer .container {
+  justify-content: space-between;
+  width: 1200px;
 }
 
-nav .initials:hover, .nav-btn a:hover, ion-icon:hover {
-	color: crimson;
+nav .initials:hover,
+.nav-btn a:hover,
+ion-icon:hover {
+  /* TODO: Make the text and icon colors crimson */
 }
 
-.about, .projects, .contact {
-	display: flex;
-	justify-content: center;
-	padding: 96px 0;
+.about,
+.projects,
+.contact {
+  /* TODO: Center these components along the Y axis */
+  padding: 96px 0;
 }
 
 .container {
-	display: flex;
-	align-items: center;
-	width: 1000px;
-	margin: 0 16px;
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  margin: 0 16px;
 }
 
 .header {
-	font-size: 36px;
-	padding-bottom: 8px;
+  /* TODO: Make the text size 36px */
+  padding-bottom: 8px;
 }
 
 .body-txt {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 /* Nav */
 nav {
-	position: fixed;
-	background-color: whitesmoke;
-	filter: drop-shadow(0 1.5px 7.5px rgba(0, 0, 0, .15));
-	z-index: 10;
+  position: fixed;
+  background-color: whitesmoke;
+  filter: drop-shadow(0 1.5px 7.5px rgba(0, 0, 0, 0.15));
+  z-index: 10;
 }
 
 nav .initials {
-	font-size: 36px;
-	font-weight: bold;
-	padding-bottom: 8px;
-	transition: color .25s ease-in-out;
+  /* TODO: Make the text size 36px the text weight bold */
+  padding-bottom: 8px;
+  transition: color 0.25s ease-in-out;
 }
 
 .nav-btn {
-	display: flex;
-	gap: 64px;
+  display: flex;
+  gap: 64px;
 }
 
 .nav-btn a {
-	font-size: 18px;
-	font-weight: 500;
-	transition: color .25s ease-in-out;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.25s ease-in-out;
 }
 
 /* Hero */
 .hero {
-	display: flex;
-	justify-content: center;
-	height: 100vh;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
 }
 
 .hero .container {
-	justify-content: space-between;
+  /* TODO: Make it such that elements in the container are spaced apart */
 }
 
-.hero .left, .contact .container {
-	display: flex;
-	flex-direction: column;
-	gap: 64px;
+.hero .left,
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  /* TODO: Add a gap of 64px */
 }
 
 .hero .name {
-	font-size: 64px;
+  font-size: 64px;
 }
 
 .hero .tagline {
-	font-size: 24px;
-	font-weight: 500;
-	width: 500px;
+  /* TODO: Make the text size 24px and text weight 500 */
+  width: 500px;
 }
 
-.resume-btn, .contact-btn {
-	font-size: 18px;
-	font-weight: 500;
-	padding: 16px 32px;
-	width: fit-content;
-	background-color: crimson;
-	color: whitesmoke;
-	border-radius: 10px;
-	transition: transform .25s ease-in-out;
+.resume-btn,
+.contact-btn {
+  font-size: 18px;
+  font-weight: 500;
+  /* TODO: Give the buttons a vertical padding of 16 and a horizontal padding of 32 */
+  width: fit-content;
+  background-color: crimson;
+  color: whitesmoke;
+  /* TODO: Make the corner radius of the buttons 10px */
+  transition: transform 0.25s ease-in-out;
 }
 
-.resume-btn:hover, .contact-btn:hover {
-	transform: scale(1.1);
+.resume-btn:hover,
+.contact-btn:hover {
+  transform: scale(1.1);
 }
 
 .hero img {
-	height: 320px;
-	width: 320px;
-	border-radius: 50%;
-	object-fit: cover;
-	object-position: 0 30%;
-	border: 4px solid crimson;
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0 30%;
+  border: 4px solid crimson;
 }
 
 /* About */
 .about .container {
-	flex-direction: column;
-	align-items: unset;
+  /* TODO: Make the direction of the elements flow vertically */
+  align-items: unset;
 }
 
 /* Projects */
 .projects .container {
-	flex-direction: column;
-	gap: 56px;
+  flex-direction: column;
+  gap: 56px;
 }
 
 .project-grid {
-	display: grid;
-	width: 100%;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	justify-content: center;
-  align-items: center;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* TODO: Center this along both X and Y */
   gap: 32px;
 }
 
 .project-grid a img {
-	width: 300px;
-	height: auto;
-	background-color: crimson;
-	border-radius: 10px;
-	filter: drop-shadow(0 1.5px 7.5px rgba(0, 0, 0, .15));
-	transition: transform .25s ease-in-out;
+  width: 300px;
+  height: auto;
+  background-color: crimson;
+  border-radius: 10px;
+  filter: drop-shadow(0 1.5px 7.5px rgba(0, 0, 0, 0.15));
+  transition: transform 0.25s ease-in-out;
 }
 
 .project-grid a img:hover {
-	transform: scale(1.1);
+  /* Make this scale up to 1.1x */
 }
 
 /* Contact */
 .contact .container {
-	align-items: unset;
+  align-items: unset;
 }
 
 /* Footer */
 footer {
-	background-color: black;
+  /* TODO: Make the background color black */
 }
 
 footer h1 {
-	font-size: 18px;
-	color: whitesmoke;
+  font-size: 18px;
+  color: whitesmoke;
 }
 
 .footer-btn {
-	display: flex;
-	gap: 32px;
+  display: flex;
+  gap: 32px;
 }
 
 .footer-btn a {
-	display: flex;
+  display: flex;
 }
 
 ion-icon {
-	color: whitesmoke;
-	font-size: 24px;
-	transition: color .25s ease-in-out;
+  color: whitesmoke;
+  font-size: 24px;
+  transition: color 0.25s ease-in-out;
 }
